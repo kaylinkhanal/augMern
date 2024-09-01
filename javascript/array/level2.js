@@ -12,5 +12,5 @@ const arrayReversed = array.reverse();
 
 const newArray = [2, 1];
 
-const arrayConcatenated = newArray.concat(arrayReversed);
+const arrayConcatenated = arrayReversed.concat(newArray);
 console.log(arrayConcatenated);
