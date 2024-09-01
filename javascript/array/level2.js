@@ -1,4 +1,9 @@
-const array = [3,5,3,5];
-//expected output is [5,3,5,3];
+const array = [3, 5, 3, 5];
 
-console.log(array.reverse());
+
+const newArr = [2, 1];
+const result = array.concat(newArr); 
+
+console.log(result); // Output: [5, 3, 5, 3, 3, 2, 1]
+
+// console.log(array.reverse()); // Output: [)
