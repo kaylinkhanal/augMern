@@ -6,12 +6,12 @@ const array = [3,5,3,5]
 
 //Q2
 //expected output is [5,3,5,3]
-// const output = array.reverse()
+const output = array.reverse()
 // console.log(output)
 
 
 //Q3
 const newArr = [2,1]
 //expected output is [5,3,5,3,2,1]
- const newOutput = [...array, ...newArr]
+ const newOutput = [...output, ...newArr]
  console.log(newOutput);
