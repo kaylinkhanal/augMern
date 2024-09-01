@@ -7,5 +7,10 @@ const array = [3, 5, 3, 5];
 //-------------------------
 
 //Q2 expected [5,3,5,3]
+const arrayReversed = array.reverse();
+//console.log(arrayReversed);
 
-console.log(array.reverse());
+const newArray = [2, 1];
+
+const arrayConcatenated = newArray.concat(arrayReversed);
+console.log(arrayConcatenated);
