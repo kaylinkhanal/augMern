@@ -8,6 +8,7 @@ array.forEach((item) => {
 });
 console.log(sum);
 
+
 // Q2) expected output
 // [4,6,2]
 const output = array.map((item) => {
@@ -17,6 +18,7 @@ const output = array.map((item) => {
   return item;
 });
 console.log(output);
+
 
 //Q3) expected output:
 // [13,15]
