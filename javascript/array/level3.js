@@ -12,11 +12,8 @@ console.log(sum);
 // [4,6,2]
 
 const output = array.map((item) => {
-  if (item % 2 !== 0) {
-    return item
-  } else {
-    return item = item +1
-  }
+  if (item % 2 === 1) item = item + 1 
+  return item
 });
 console.log(output)
 
@@ -28,6 +25,6 @@ const output3 = array
     return (item = item + 10);
   })
   .filter((item) => {
-    return item > 12;
+    return item % 2 !== 0;
   });
 console.log(output3);
