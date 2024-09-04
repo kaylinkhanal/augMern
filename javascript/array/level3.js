@@ -6,11 +6,6 @@ array.forEach((item,id)=>{
 sum = sum + item
 })
 console.log(sum)
-//10
-let sum = 0;
-array.forEach((nums) => {
-  sum += nums;
-});
 
 // Q2) expected output 
 // increase by one if odd
@@ -34,5 +29,10 @@ console.log(newNums);
 
 //Q3) expected output:
 // [13,15]
+const firstStep= array.map((nums)=>{
+  return nums+10
+})
 
-console.log(array)
+firstStep.filter((item)=>{
+  if(item % 2 !==0) return item
+})
