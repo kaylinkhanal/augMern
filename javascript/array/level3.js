@@ -20,5 +20,12 @@ console.log(output);
 
 //Q3) expected output:
 // [13,15]
-
-// console.log(array);
+const result = array.map((item, id) => {
+  return (item = item + 10);
+});
+answer = result.filter((item) => {
+  if (item % 2 === 1) {
+    return item;
+  }
+});
+console.log(answer);
