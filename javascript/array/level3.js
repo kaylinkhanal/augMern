@@ -10,7 +10,9 @@ console.log(sum);
 
 
 // Q2) expected output
-// [4,6,2]
+// Q2) expected output 
+// increase by one if odd
+
 const output = array.map((item) => {
   if (item % 2 !== 0) {
     return (item = item + 1);
