@@ -19,4 +19,13 @@ console.log(output);
 //Q3) expected output:
 // [13,15]
 
+array.map((item)=>{
+    return item +10
+})
+result.filter((item)=>{
+    if (item%2!== 0){
+        return item
+    }
+
+})
 console.log(array);
