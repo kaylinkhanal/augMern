@@ -32,15 +32,6 @@ if(item%2==1)
 })
 
 
-// const result = array.map((item)=>{
-//   return item + 10
-// })
-// result.filter((item)=>{
-// if(item%2==1)
-//   return item
-// })
-// console.log(result);
-
 
 // const output = array.map(item=>item+10)
 // output.filter(item=> item%2==1)
