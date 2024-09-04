@@ -12,3 +12,11 @@ const user = {
 // add all items to sum
 //expected output : 110
 
+let sum = 0;
+
+let nums = Object.values(user);
+nums.forEach((item)=>{
+  if(typeof item == "number") sum += item
+})
+
+sum
