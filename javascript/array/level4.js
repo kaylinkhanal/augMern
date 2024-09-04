@@ -6,6 +6,7 @@ const user = {
 }
 
 
+
 //Q1
 //hint: get only [30,40, 40 ] first
 // add all items to sum
