@@ -12,6 +12,7 @@ const user = {
 delete user.name;
 
 const array = [user.math, user.science, user.gk];
+console.log(array)
 let sum = 0;
 const output = array.forEach((item) => {
   sum += item;
