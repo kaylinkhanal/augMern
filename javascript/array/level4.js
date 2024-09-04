@@ -12,3 +12,6 @@ const user = {
 // add all items to sum
 //expected output : 110
 
+delete user.name;
+console.log(user);
+

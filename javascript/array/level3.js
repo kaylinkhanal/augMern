@@ -1,11 +1,6 @@
 const array = [3,5,2]
 
 //Q1) expected output 
-let sum = 0
-array.forEach((item,id)=>{
-sum = sum + item
-})
-console.log(sum)
 //10
 let sum = 0
 array.forEach((item,id)=>{
