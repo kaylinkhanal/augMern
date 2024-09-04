@@ -19,16 +19,33 @@ const output = array.map((item,id)=>{
    if(item%2 ===1 ) item = item + 1
    return item
 })
-console.log(output)
-// [4,6,2]
-const output = array.map((item,id)=>{
-    if(item%2 ===1) item = item + 1
-    return item
-  })
-  console.log(output);
+console.log(output);
+
                     
 
 
 //Q3) expected output:
 // [13,15]
 
+
+const result = array.map((item)=>{
+  return item + 10
+})
+result.filter((item)=>{
+if(item%2==1)
+  return item
+})
+
+
+// const result = array.map((item)=>{
+//   return item + 10
+// })
+// result.filter((item)=>{
+// if(item%2==1)
+//   return item
+// })
+// console.log(result);
+
+
+// const output = array.map(item=>item+10)
+// output.filter(item=> item%2==1)
