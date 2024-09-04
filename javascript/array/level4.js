@@ -11,10 +11,10 @@ const user = {
 //expected output : 110
 delete user.name;
 
-const array = [user.math, user.science, user.gk];
-console.log(array)
+const array = Object.values(user);
+console.log(array);
 let sum = 0;
-const output = array.forEach((item) => {
+array.forEach((item) => {
   sum += item;
 });
 console.log(sum);
