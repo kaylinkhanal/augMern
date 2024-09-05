@@ -8,7 +8,12 @@ const user = {
 // expectedOUTPUT:
 // ['ram thapa', 'shyam', 'gopal bhatta']
 const output = arr.map((item)=>{
-    // hint: user['ram']
+  if (user[item]!== undefined){
+  return item + " " + user[item]
+  }
+else{
+  return item
+}
 })
 
 console.log(output)
