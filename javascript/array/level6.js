@@ -1,4 +1,4 @@
-const fullMarks = {
+const config = {
     practical: {
         passMarks: 30,
         fullMarks: 50
