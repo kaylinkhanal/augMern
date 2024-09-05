@@ -15,11 +15,10 @@ const users = ["hari", "shyam", "hari"];
 //hint2: how to remove particular index/item
 //remove from array if duplicate
 let uniqueUser = [];
-users.map((item) => {
+users.forEach((item) => {
   if (!uniqueUser.includes(item)) {
     uniqueUser.push(item);
   }
-  return uniqueUser;
 });
 console.log(uniqueUser);
 
