@@ -8,12 +8,13 @@ const user = {
 // expectedOUTPUT:
 // ['ram thapa', 'shyam', 'gopal bhatta']
 const output = arr.map((item)=>{
-  if (user[item]!== undefined){
-  return item + " " + user[item]
+  if (user[item]){
+    return item.charAt(0).toUpperCase() + item.slice(1) +" " + user[item] 
   }
-else{
-  return item
-}
+  else{
+    return item.charAt(0).toUpperCase() + item.slice(1)
+  }
 })
+
 
 console.log(output)
