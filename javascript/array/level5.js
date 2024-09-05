@@ -10,9 +10,9 @@ const user = {
 const output = arr.map((item) => {
   // hint: user['ram']
   if (typeof user[item] !== "undefined") {
-    return item + " " + user[item];
+    return item[0].toUpperCase() + item.slice(1) + " " + user[item][0].toUpperCase() + user[item].slice(1);
   } else {
-    return item;
+    return item[0].toUpperCase() + item.slice(1);
   }
 });
 
