@@ -14,3 +14,9 @@ const country ={
 
 
 // Output should be [['ram', 'kathmandu'], ['stephan','washington DC']]
+Object.entries(userDetails).map((item) => {
+    const user = item[0];
+    const userNationality = (country[item[1].nationality]);
+    const output = [user, userNationality]
+    return output
+  })
