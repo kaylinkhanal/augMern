@@ -31,3 +31,16 @@ const scores = {
 //no of subjects the student has failed
 
 // calculate percentage scored
+
+let failedSubjectNumber = 0;
+Object.entries(scores).forEach((item) => {
+  const subjectName = item[0];
+  const subjectType = item[1].type;
+  const subjectScore = item[1].score;
+  if (subjectType === 'theory' && subjectScore < config.theory.passMarks) {
+    failedSubjectNumber ++
+  } else if (subjectType === 'practical' && subjectScore < config.practical.passMarks) {
+     failedSubjectNumber ++
+  }
+});
+console.log(failedSubjectNumber);
