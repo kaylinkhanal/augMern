@@ -29,4 +29,9 @@ const scores = {
 }
 
 //no of subjects the student has failed
+<<<<<<< HEAD
 // total percentage
+=======
+
+// calculate percentage scored
+>>>>>>> e4a54e3663610b4f0484a45f094f14d9495e8ac3
