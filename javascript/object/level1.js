@@ -8,7 +8,8 @@ const obj = {
 // {
 //     name: 'Ram'
 // }
-
+obj.name = obj.name[0].toUpperCase() + obj.name[0].slice(1)  + obj.name.slice(1)
+console.log(obj)
 
 const newObj = {
     name:'gopal'
