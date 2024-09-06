@@ -27,6 +27,7 @@ const scores = {
     score: 20
    },
 }
+<<<<<<< HEAD
 let number = 0
 Object.entries(scores).forEach(([subject, other])=>{
   if (other.type === 'theory' && other.score < config.theory.passMarks ){
@@ -38,3 +39,9 @@ Object.entries(scores).forEach(([subject, other])=>{
 });
 console.log(number)
 //no of subjects the student has failed
+=======
+
+//no of subjects the student has failed
+
+// calculate percentage scored
+>>>>>>> e4a54e3663610b4f0484a45f094f14d9495e8ac3
