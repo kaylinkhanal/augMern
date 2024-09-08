@@ -1,0 +1,21 @@
+node:internal/errors:541
+      throw error;
+      ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "stringToWrite" argument must be of type string. Received null
+    at [_writeToOutput] [as _writeToOutput] (node:internal/readline/interface:434:5)
+    at REPLServer.prompt (node:internal/readline/interface:392:27)
+    at REPLServer.displayPrompt (node:repl:1201:8)
+    at new REPLServer (node:repl:1061:8)
+    at Object.start (node:repl:1069:10)
+    at C:\Users\adity\AppData\Roaming\Sublime Text\Packages\SublimeREPL\config\NodeJS\repl.js:5:20
+    at Object.<anonymous> (C:\Users\adity\AppData\Roaming\Sublime Text\Packages\SublimeREPL\config\NodeJS\repl.js:38:3)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+
+Node.js v20.17.0
+
+***Repl Closed***
