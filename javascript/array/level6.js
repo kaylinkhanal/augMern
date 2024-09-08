@@ -29,6 +29,8 @@ const scores = {
 };
 
 //no of subjects the student has failed
+
+// calculate percentage scored
 // let count = 0;
 // for (const [key, value] of Object.entries(scores)) {
 //   if (value.score < config[value.type].passMarks) {
