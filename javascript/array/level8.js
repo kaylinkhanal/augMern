@@ -20,3 +20,7 @@ const cartItems= [
     {id: 41, product:'nike shoes', quantity:1, price:20},
 ]
 //total price using reduce
+const totalPrice = cartItems.reduce((acc, item) => {
+  return acc = acc + (item.quantity * item.price);
+}, 0)
+console.log(totalPrice)
