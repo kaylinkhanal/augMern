@@ -11,4 +11,4 @@ for (let item in scores) {
 }
 console.log(sum);
 const percentage = (sum / 300) * 100;
-console.log(percentage);
+console.log(percentage.toFixed(2));
