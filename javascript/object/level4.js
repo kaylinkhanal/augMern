@@ -17,6 +17,6 @@ const country ={
 Object.entries(userDetails).map((item) => {
     const user = item[0];
     const userNationality = (country[item[1].nationality]);
-    const output = [user, userNationality]
-    return output
-  })
+    return [user, userNationality]
+});
+console.log(userDetails);
