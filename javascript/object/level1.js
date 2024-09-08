@@ -1,6 +1,6 @@
 const obj = {
-    name: 'ram'
-}
+  name: "ram",
+};
 
 //Q1 write some code here:
 // output should be
@@ -8,13 +8,12 @@ const obj = {
 // {
 //     name: 'Ram'
 // }
-
-
+let objName = obj.name[0].toUpperCase() + obj.name.slice(1);
+console.log(objName);
 const newObj = {
-    name:'gopal'
-}
+  name: "gopal",
+};
 //Q2 output:
 // ['ram','gopal']
-
-
-console.log(obj)
+const output = [obj.name, newObj.name];
+console.log(output);
