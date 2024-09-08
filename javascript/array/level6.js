@@ -29,3 +29,20 @@ const scores = {
 }
 
 //no of subjects the student has failed
+
+// calculate percentage scored
+let failedNum = 0
+Object.entries(scores).map((item)=>{
+const subName = item[0]
+const subType = item[1].type
+const subScore = item[1].score
+if(subType== 'theory' && subScore < config.theory.passMarks){
+  failedNum++
+}
+  else if(subType== 'practical' && subScore< config.theory.passMarks){
+    failedNum++
+  }
+// console.log(subName);
+})
+failedNum;
+
