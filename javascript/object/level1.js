@@ -18,7 +18,10 @@ obj
 const newObj = {
     name:'gopal'
 }
+const output = {...obj, ...newObj}
+
 //Q2 output:
+
 // ['ram','gopal']
 
 function addName(firstObj,secondObj) {
