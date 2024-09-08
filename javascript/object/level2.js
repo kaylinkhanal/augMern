@@ -8,7 +8,8 @@ const scores = {
 let sum = 0;
 for (let item in scores) {
   sum = sum + scores[item];
+  subjectNumber = Object.keys(scores).length;
 }
 console.log(sum);
-const percentage = (sum / 300) * 100;
+const percentage = (sum / (subjectNumber * 100)) * 100;
 console.log(percentage.toFixed(2));
