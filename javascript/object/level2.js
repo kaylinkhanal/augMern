@@ -12,4 +12,4 @@ for (let item in scores) {
 }
 console.log(sum);
 const percentage = (sum / (subjectNumber * 100)) * 100;
-console.log(percentage.toFixed(2));
+console.log(Number(percentage.toFixed(2)));
