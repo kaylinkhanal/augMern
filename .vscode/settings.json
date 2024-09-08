@@ -26,5 +26,9 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "notebook.defaultFormatter": "esbenp.prettier-vscode",
   "editor.stickyScroll.scrollWithEditor": true,
-  "editor.stickyScroll.enabled": false
+  "editor.stickyScroll.enabled": false,
+  "javascript-repl.coverage": false,
+  "javascript-repl.outputChannel": true,
+  "javascript-repl.useWorkers": true,
+  "javascript-repl.usageEmptyContent": false
 }
