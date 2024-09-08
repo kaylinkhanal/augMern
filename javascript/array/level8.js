@@ -5,3 +5,8 @@ const cartItems= [
     {id: 41, product:'nike shoes', quantity:1, price:20},
 ]
 //total price using reduce
+cartItems.reduce((sum,obj,id,arr)=>{
+    totalPrice = obj.quantity * obj.price
+    sum += totalPrice
+    return sum
+  },0)
