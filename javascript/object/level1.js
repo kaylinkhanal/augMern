@@ -14,7 +14,10 @@ console.log(obj.name.charAt(0).toUpperCase()+obj.name.slice(1))
 const newObj = {
     name:'gopal'
 }
+const output = {...obj, ...newObj}
+
 //Q2 output:
+
 // ['ram','gopal']
 
 const newArr = [obj.name, newObj.name]
