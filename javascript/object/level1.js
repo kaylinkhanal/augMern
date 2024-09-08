@@ -4,6 +4,7 @@ const obj = {
 obj.name = obj.name[0].toUpperCase() + obj.name.slice(1);
 //console.log(obj);
 
+
 //Q1 write some code here:
 // output should be
 //
