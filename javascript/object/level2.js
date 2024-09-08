@@ -11,5 +11,5 @@ for(let item in scores){
   sum = sum + scores[item]
   number +=1
 }
-const percentage = sum/number*100*100
+const percentage = (sum/(number*100))*100
 console.log(percentage)
