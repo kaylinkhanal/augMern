@@ -1,8 +1,8 @@
-const name ="hello"
-function test(){
+
+const test=(name)=>{
     return name
 }
-
+test("hello")
 //Q1 convert to arrow function
 const test1=()=>{return name}
 console.log(test1());
