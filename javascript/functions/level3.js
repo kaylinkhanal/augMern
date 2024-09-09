@@ -27,10 +27,17 @@ const status1 = {
 const status2 = {
   status: "success",
 };
-const checkIfSucces = () => {
+const checkIfSucces = (statusCondition) => {
+
   //write your code here
+
+  if (statusCondition === "success") 
+    return true;
+  return false;
 };
 
-checkIfSucces(status1); //should return false
+console.log(checkIfSucces(status1.status)); //should return false
 
-checkIfSucces(status2); //should return true
+console.log(checkIfSucces(status2.status)); //should return true
+
+

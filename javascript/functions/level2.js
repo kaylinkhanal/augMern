@@ -18,7 +18,7 @@ const cholocateCounter2 = (quantity, price) => {
   totalPrice2 = quantity * price;
   console.log(totalPrice2);
   if (totalPrice2 < 150) {
-    return "Sorry, order less than of rs 100 is not allowed";
+    return "//Sorry, order less than of rs 100 is not allowed";
   }
 };
 console.log(cholocateCounter2(1, 50));

@@ -19,7 +19,7 @@
   "errorLens.gutterIconsEnabled": true,
   "errorLens.problemRangeDecorationEnabled": true,
   "errorLens.statusBarIconsEnabled": true,
-  "errorLens.statusBarMessageEnabled": true,
+  "errorLens.statusBarMessageEnabled": false,
   "errorLens.statusBarColorsEnabled": true,
   "editor.tabSize": 2,
   "notebook.formatOnSave.enabled": true,
@@ -27,9 +27,40 @@
   "notebook.defaultFormatter": "esbenp.prettier-vscode",
   "editor.stickyScroll.scrollWithEditor": true,
   "editor.stickyScroll.enabled": false,
-  "javascript-repl.coverage": false,
+  "javascript-repl.coverage": true,
   "javascript-repl.outputChannel": true,
   "javascript-repl.useWorkers": true,
   "javascript-repl.usageEmptyContent": false,
-  "cSpell.enabled": false
+  "cSpell.enabled": true,
+  "errorLens.codeLensEnabled": false,
+  "errorLens.borderRadius": "0.2em",
+  "errorLens.enabledDiagnosticLevels": ["error", "warning", "info", "hint"],
+  "errorLens.respectUpstreamEnabled": {
+    "statusBar": true
+  },
+  "errorLens.messageBackgroundMode": "message",
+  "errorLens.margin": "20ch",
+  "explorer.compactFolders": true,
+  "explorer.fileNesting.enabled": true,
+  "npm.enableRunFromFolder": true,
+  "terminal.integrated.fontSize": 14,
+  "scm.diffDecorationsGutterPattern": {
+    "added": true
+  },
+  "errorLens.gutterIconsFollowCursorOverride": true,
+  "errorLens.enableOnDiffView": true,
+  "errorLens.scrollbarHackEnabled": true,
+  "css.lint.unknownVendorSpecificProperties": "warning",
+  "testing.showAllMessages": true,
+  "javascript-repl.detectInfiniteLoops": 100000,
+  "javascript-repl.coverageTimes": false,
+  "errorLens.messageTemplate": "$severity $message",
+  "errorLens.editorHoverPartsEnabled": {
+    "buttonsEnabled": true,
+    "sourceCodeEnabled": true,
+    "messageEnabled": true
+  },
+  "cSpell.showAutocompleteSuggestions": true,
+  "cSpell.advanced.feature.useReferenceProviderWithRename": true,
+  "cSpell.allowCompoundWords": true
 }
