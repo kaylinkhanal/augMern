@@ -8,9 +8,9 @@ const scores = {
   
   let sum =0
   for(let item in scores){
-    console.log(scores[item])
+    sum += scores[item]
   }
-  console.log(sum)
   
-  const percentage = sum/300*100
-  console.log(percentage)
+  const totalMakrs =Object.keys(scores).length*100
+  const percentage =(sum/totalMakrs)*100
+  parseFloat(percentage.toFixed(2))
