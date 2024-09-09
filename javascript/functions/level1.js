@@ -1,5 +1,5 @@
-const name ="hello"
-function test(){
+
+const test=(name)=>{
     return name
 }
 
@@ -7,3 +7,5 @@ function test(){
 
 
 //Q2 pass name as argument instead of external constants
+
+test("hello")
