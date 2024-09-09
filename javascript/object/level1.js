@@ -15,7 +15,10 @@ obj.name = obj.name[0].toUpperCase() + obj.name[0].slice(1)
 const newObj = {
     name:'gopal'
 }
+const output = {...obj, ...newObj}
+
 //Q2 output:
+
 // ['ram','gopal']
 
 const output = [obj.name, newObj.name]
