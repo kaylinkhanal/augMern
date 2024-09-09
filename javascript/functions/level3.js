@@ -9,6 +9,9 @@ const rideDetails= {
     unitKmPrice: 30
 }
 
+const calculatePrice=()=>{
+    return rideDetails.unitKmPrice * parseInt(rideDetails.distance)
+  }
 
 
 //Q2 write a js function that checks if the object has status success or not
