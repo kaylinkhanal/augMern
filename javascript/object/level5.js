@@ -20,6 +20,7 @@ const subjectCodes = Object.keys(userDetails).filter((item) => {
   })
   
   const userName = userDetails.name;
+  
   const subjectScores = Object.values(userDetails).filter((item) => {
     if (typeof item === 'number') {
       return item
