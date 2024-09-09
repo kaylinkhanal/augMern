@@ -1,6 +1,6 @@
 const obj = {
-    name: 'ram'
-}
+  name: "ram",
+};
 
 //Q1 write some code here:
 // output should be
@@ -8,13 +8,18 @@ const obj = {
 // {
 //     name: 'Ram'
 // }
-
-
+//solution--------------------------------------
+let output = Object.entries(obj).map((item) => {
+  let valueUpdated =
+    item[1].charAt(0).toUpperCase() + item[1].slice(1).toLowerCase();
+  return (obj.name = valueUpdated);
+});
+console.log(obj);
+//---------------------------------------------------------
 const newObj = {
-    name:'gopal'
-}
+  name: "gopal",
+};
 //Q2 output:
 // ['ram','gopal']
-
-
-console.log(obj)
+obj.name = newObj.name;
+console.log(obj);
