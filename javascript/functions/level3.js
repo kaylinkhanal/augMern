@@ -23,9 +23,14 @@ const status1 ={
 const status2 ={
     status: 'success'
 }
-const checkIfSucces=()=>{
-//write your code here
-}
+const checkIfSucces=(statusCheck)=>{
+    if (statusCheck.status === 'success'){
+      return true
+    }
+      else{
+        return false
+      }
+    }
 
 checkIfSucces(status1)  //should return false
 
