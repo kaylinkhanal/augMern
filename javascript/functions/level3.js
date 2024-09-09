@@ -20,12 +20,9 @@ const status1 ={
 const status2 ={
     status: 'success'
 }
-const checkIfSucces=()=>{
-//write your code here
-}
-
-checkIfSucces(status1)  //should return false
-
-checkIfSucces(status2)  //should return true
-
+const checkIfSucces=(status)=>{
+    return status.status === 'success';
+  }
+  checkIfSucces(status1)  //should return false
+  checkIfSucces(status2)  //should return true
 
