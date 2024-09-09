@@ -30,5 +30,6 @@
   "javascript-repl.coverage": false,
   "javascript-repl.outputChannel": true,
   "javascript-repl.useWorkers": true,
-  "javascript-repl.usageEmptyContent": false
+  "javascript-repl.usageEmptyContent": false,
+  "cSpell.enabled": false
 }
