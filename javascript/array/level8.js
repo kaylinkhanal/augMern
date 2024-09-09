@@ -24,3 +24,4 @@ const totalPrice = cartItems.reduce((acc, item) => {
   return acc = acc + (item.quantity * item.price);
 }, 0)
 console.log(totalPrice)
+//total price using reduces
