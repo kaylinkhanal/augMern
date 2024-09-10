@@ -28,16 +28,12 @@ const status2 = {
   status: "success",
 };
 const checkIfSucces = (statusCondition) => {
-
   //write your code here
 
-  if (statusCondition === "success") 
-    return true;
+  if (statusCondition === "success") return true;
   return false;
 };
 
 console.log(checkIfSucces(status1.status)); //should return false
 
 console.log(checkIfSucces(status2.status)); //should return true
-
-

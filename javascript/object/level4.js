@@ -1,24 +1,30 @@
 const userDetails = {
-  ram: {
-    nationality: "nepal",
-  },
-  stephan: {
-    nationality: "USA",
-  },
+	ram: {
+		nationality: "nepal",
+	},
+	stephan: {
+		nationality: "USA",
+	},
 };
 
 const country = {
-  nepal: "kathmandu",
-  USA: "washington DC",
+	nepal: "kathmandu",
+	USA: "washington DC",
 };
 
 // Output should be [['ram', 'kathmandu'], ['stephan','washington DC']]
+console.log(Object.entries(userDetails));
 
-Object.entries(userDetails).map((item, index) => {
-  console.log(item);
-  Object.entries(item).map((val, ind) => {
-    console.log(val, ind);
-    if (userDetails.index === nepal) return country.nepal;
-    if (userDetails.index === USA) return country.USA;
-  });
+finalOutput = Object.entries(userDetails).map((item, index) => {
+	//console.log(item);
+
+	if (item[1].nationality == "nepal") {
+		//console.log([item[0],country.nepal]);
+		return [item[0], country.nepal];
+	}
+	if (item[1].nationality === "USA") {
+		//console.log([item[0],country.USA]);
+		return [item[0], country.USA];
+	}
 });
+console.log(finalOutput);

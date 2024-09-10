@@ -22,4 +22,7 @@ const newObj = {
 //Q2 output:
 // ['ram','gopal']
 obj.name = newObj.name;
-console.log(obj);
+//console.log([obj]);
+
+//console.log(Object.entries(obj));
+console.log(Object.entries(obj)[0]);
