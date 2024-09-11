@@ -63,8 +63,6 @@ filterItem = myDetails.map((item, index) => {
 });
 console.log(filterItem);
 
-
-
 //Q4------------------------------------------------
 const userDetails = [
 	{ score: 0, name: "hari", marks: [10, 3, 23] },
@@ -79,14 +77,13 @@ const userDetails = [
 //     {score: 76, name:'shyam',marks: [20,13,43]},
 // ]
 
-
-userDetails.map((item,index)=>{
-console.log(item,index);
-console.log(item.score)
-item.marks.map((m,i)=>{
-  console.log(m);
-  item.score=item.score+m;
-})
-console.log(item.score)
-})
-console.log(userDetails)
+userDetails.map((item, index) => {
+	console.log(item, index);
+	console.log(item.score);
+	item.marks.map((m, i) => {
+		console.log(m);
+		item.score = item.score + m;
+	});
+	console.log(item.score);
+});
+console.log(userDetails);
