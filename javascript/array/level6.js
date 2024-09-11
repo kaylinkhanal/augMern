@@ -28,6 +28,30 @@ const scores = {
 	},
 };
 
-//no of subjects the student has failed
+//Q1-------no of subjects the student has failed----------------------
 
-// calculate percentage scored
+//Q2------- calculate percentage scored-------------------------------
+
+//Q1--------------------------------------------
+
+console.log(Object.entries(scores));
+Object.entries(scores).map((item, index) => {
+	console.log(item, index);
+	if (item[1].type === "theory") {
+		pm = config.theory.passMarks;
+		console.log(pm);
+
+		if (item[1].score >= pm) {
+			console.log(item[1].score);
+		}
+	}
+	//
+
+	if (item[1].type === "practical") {
+		pm = config.practical.passMarks;
+		console.log(pm);
+		if (item[1].score >= pm) {
+			console.log(item[1].score);
+		}
+	}
+});
