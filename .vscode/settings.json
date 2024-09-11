@@ -28,8 +28,8 @@
 	"editor.stickyScroll.scrollWithEditor": true,
 	"editor.stickyScroll.enabled": false,
 	"javascript-repl.coverage": true,
-	"javascript-repl.outputChannel": false,
-	"javascript-repl.useWorkers": false,
+	"javascript-repl.outputChannel": true,
+	"javascript-repl.useWorkers": true,
 	"javascript-repl.usageEmptyContent": false,
 	"cSpell.enabled": true,
 	"errorLens.codeLensEnabled": false,
@@ -39,7 +39,7 @@
 		"statusBar": true
 	},
 	"errorLens.messageBackgroundMode": "message",
-	"errorLens.margin": "20ch",
+	"errorLens.margin": "60ch",
 	"explorer.compactFolders": true,
 	"explorer.fileNesting.enabled": true,
 	"npm.enableRunFromFolder": true,
@@ -90,5 +90,22 @@
 	"workbench.editor.navigationScope": "default",
 	"workbench.editor.revealIfOpen": true,
 	"workbench.editor.scrollToSwitchTabs": true,
-	"window.density.editorTabHeight": "compact"
+	"window.density.editorTabHeight": "compact",
+	"errorLens.messageMaxChars": 1000,
+	"errorLens.multilineMessage": {
+		"decorationMaxNumberOfLines": "6",
+		"preferFittingMessageMultiplier": "2",
+		"maxColumnForCalculation": "130",
+		"preferSameLineMultiplier": "1",
+		"highlightProblemLine": "range",
+		"alignStart": "0",
+		"alignEnd": "0",
+		"margin": "4",
+		"padding": "1"
+	},
+	"errorLens.onSaveTimeout": 1000,
+	"errorLens.statusBarIconsPriority": -9000,
+	"javascript.referencesCodeLens.enabled": true,
+	"javascript.referencesCodeLens.showOnAllFunctions": true,
+	"debug.javascript.autoAttachFilter": "smart"
 }
