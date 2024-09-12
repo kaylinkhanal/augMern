@@ -1,4 +1,4 @@
-npx create-next-app@latestconst cartItems= [
+ const cartItems= [
     {id: 45, product:'hawkins', quantity:3, price:10},
     {id: 42, product:'baltra cooker', quantity:5, price:20},
     {id: 43, product:'phillips', quantity:2, price:10},
