@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form{
+  background-color:beige;
+  width : 120px;
+}
+
+.login{
+  background-image: url('/bg_img.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 350px;
+}
+
+.content{
+  border: 3px solid black;
+  font-family: 'biome';
+  backdrop-filter: blur(8px);
+  padding: 10px;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+
+.p{
+  border: 2px solid black;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #131313;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.button {
+  background-color: #040404; 
+  color: white;
+  margin: 7px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px; 
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  text-transform: uppercase;
+
+}
+
+.button:hover {
+  background-color: #343637; 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3), 0 6px 8px rgba(0, 0, 0, 0.1); 
+}
