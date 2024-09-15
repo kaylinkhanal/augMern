@@ -10,6 +10,9 @@ const rideDetails= {
 }
 
 
+const calculatePrice = ()=>{
+    return rideDetails.unitKmPrice * parseInt(rideDetails.distance)
+}
 
 //Q2 write a js function that checks if the object has status success or not
 //should return true or false
@@ -20,8 +23,9 @@ const status1 ={
 const status2 ={
     status: 'success'
 }
-const checkIfSucces=()=>{
-//write your code here
+const checkIfSucces=(obj)=>{
+   if(obj.status == success) return true
+   return false
 }
 
 checkIfSucces(status1)  //should return false

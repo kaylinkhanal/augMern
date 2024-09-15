@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form{
+  background-color: aqua;
+  width: 150px;
+}
+
+.login {
+  border: 2px dashed red;
+  margin: 70px;
+  padding: 60px;
+}
+
+.loginbtn {
+  padding: 3px;
+  color: white;
+  border-radius: 4px;
+  background-color: red;
+}
