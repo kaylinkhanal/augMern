@@ -89,7 +89,7 @@
 	"workbench.editor.splitInGroupLayout": "horizontal",
 	"workbench.editor.navigationScope": "default",
 	"workbench.editor.revealIfOpen": true,
-	"workbench.editor.scrollToSwitchTabs": true,
+	"workbench.editor.scrollToSwitchTabs": false,
 	"window.density.editorTabHeight": "compact",
 	"errorLens.messageMaxChars": 1000,
 	"errorLens.multilineMessage": {
@@ -107,5 +107,8 @@
 	"errorLens.statusBarIconsPriority": -9000,
 	"javascript.referencesCodeLens.enabled": true,
 	"javascript.referencesCodeLens.showOnAllFunctions": true,
-	"debug.javascript.autoAttachFilter": "smart"
+	"debug.javascript.autoAttachFilter": "smart",
+	"prettier.bracketSameLine": true,
+	"prettier.singleAttributePerLine": true,
+	"terminal.integrated.enableVisualBell": true
 }

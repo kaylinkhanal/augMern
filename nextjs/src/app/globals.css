@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form {
+	background-color: aqua;
+	width: 200px;
+}
+
+.login {
+	margin: auto;
+	background-color: red; /* For browsers that do not support gradients */
+	background-image: linear-gradient(
+		to bottom right,
+		rgb(247, 156, 152),
+		rgb(247, 69, 37)
+	);
+	position: fixed;
+	border: #fd0303 1px solid;
+	border-radius: 4px;
+
+	padding: 20px;
+	box-shadow: 10px 10px 10px rgb(177, 212, 252);
+	inset: 0px;
+
+	max-width: 40vw;
+	height: 70vh;
+	transition: all width 2s;
+	border-radius: 40px;
+}
+
+.login:hover {
+	margin: auto;
+	background-color: red; /* For browsers that do not support gradients */
+	background-image: linear-gradient(
+		to bottom right,
+		rgb(247, 156, 152),
+		rgb(247, 69, 37)
+	);
+	border: #ff0c03 1px solid;
+	border-radius: 40px;
+
+	padding: 20px;
+
+	box-shadow: 10px 10px 10px rgb(177, 212, 252);
+
+	max-width: 50vw;
+	height: 70vh;
+
+	animation-name: example;
+	animation-duration: 4s;
+	@keyframes example {
+		0% {
+			background-color: red;
+		}
+		25% {
+			background-color: yellow;
+		}
+		50% {
+			background-color: blue;
+		}
+		100% {
+			background-color: green;
+		}
+	}
+}
+
+.loginBtn {
+	border-radius: 2px;
+	padding: 4px;
+	border: #adf4fd 1px solid;
+	background-color: rgb(253, 0, 0);
+	color: rgb(252, 253, 253);
+}
+.loginBtn:hover {
+	background-color: rgb(241, 28, 28);
+	color: rgb(223, 252, 252);
+	border: #1bdaf3 1px solid;
+	border-radius: 4px;
+	padding: 4px;
+}
+.signUp {
+	margin: auto;
+	background-color: red; /* For browsers that do not support gradients */
+	background-image: linear-gradient(
+		to bottom right,
+		rgb(202, 248, 252),
+		rgb(136, 207, 248)
+	);
+	border: #1bdaf3 1px solid;
+	border-radius: 4px;
+	padding: 20px;
+	position: fixed;
+	inset: 0px;
+	width: 60vw;
+	height: 90vh;
+}
+.signUp > h1 {
+	margin: auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	width: 300px;
+	font-size: 20px;
+	text-decoration: underlined;
+}
+
+.signUpBtn {
+	border-radius: 4px;
+	padding: 4px;
+	border: #adf4fd 1px solid;
+	background-color: rgb(253, 0, 0);
+	color: rgb(252, 253, 253);
+}
+.signUpBtn:hover {
+	background-color: rgb(29, 248, 9);
+	color: rgb(223, 252, 252);
+	border: #1bdaf3 1px solid;
+	border-radius: 4px;
+	padding: 4px;
+}
+
+.login input {
+	padding: 4px;
+	border-radius: 6px;
+	width: 100%;
+}
+.signUp input {
+	padding: 4px;
+	border-radius: 6px;
+	width: 100%;
+}
+span.signUpQn {
+	font-size: 4px;
+	color: red;
+	font-style: italic;
+}
+.home {
+	color: red;
+}
+.signUpFormLink {
+	font-size: 4px;
+	color: #1bdaf3;
+}
+.signUpFormLink:hover {
+	text-decoration: underline;
+	color: rgb(11, 117, 2);
+}
