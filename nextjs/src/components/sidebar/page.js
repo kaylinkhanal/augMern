@@ -15,6 +15,9 @@ const Sidebar = () => {
       <span className="p-2">
         <Link href="/admin/attendance">Attendance</Link>
       </span>
+      <span className="p-2">
+        <Link href="/admin/products">Products</Link>
+      </span>
     </div>
   );
 };

@@ -1,4 +1,3 @@
-import Sidebar from "@/components/sidebar/page";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 
 import React from "react";
