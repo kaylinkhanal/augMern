@@ -110,5 +110,48 @@
 	"debug.javascript.autoAttachFilter": "smart",
 	"prettier.bracketSameLine": true,
 	"prettier.singleAttributePerLine": true,
-	"terminal.integrated.enableVisualBell": true
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"eslint.format.enable": true,
+	"rainbowTags.colors": [
+		"#e6b422",
+		"#c70067",
+		"#00a960",
+		"#fc7482",
+		"",
+		"#6402f7",
+		"#14f767",
+		"#db6204",
+		"#07e2fa"
+	],
+	"rainbowTags.allowEverywhere": true,
+	"rainbowTags.denylistTags": [
+		"!DOCTYPE",
+		"html",
+		"head",
+		"meta",
+		"body",
+		"title",
+		"link",
+		"script",
+		"base",
+		"style",
+		"area",
+		"br",
+		"col",
+		"embed",
+		"hr",
+		"img",
+		"input",
+		"param",
+		"source",
+		"track",
+		"wbr",
+		"comment"
+	],
+	"workbench.editor.enablePreviewFromCodeNavigation": true,
+	"workbench.editor.enablePreviewFromQuickOpen": true,
+	"editor.fontWeight": 100,
+	"eslint.debug": true
 }
