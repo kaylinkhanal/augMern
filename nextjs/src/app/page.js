@@ -1,29 +1,18 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 
-const Home = () => {
+const Main = () => {
+  const [number, setNumber] = useState(1)
+  function handleIncrement(){
+    
+    setNumber(number+1)
+  }
   return (
-    <div className='form'>
-      Home
-      <input placeholder='enter your name'/>
-      <button>Click me</button>
-      <h1>hi</h1>
-      <li>orange</li>
-      <li>ball</li>
-      <p>hi guys</p>
-      <tr>
-        <th>id</th>
-        <th>name</th>
-        <th>age</th>
-        <th>roll</th>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td>kaylin</td>
-        <td>10</td>
-        <td>14</td>
-      </tr>
+    <div>
+      {number}
+      <button onClick={handleIncrement}>+</button>
     </div>
   )
 }
 
-export default Home
+export default Main
