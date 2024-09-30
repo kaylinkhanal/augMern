@@ -5,7 +5,6 @@ const user = {
     gk:40,
 }
 delete user.name
-console.log(user)
 const arr = Object.values(user)
 let sum = 0
 arr.forEach((items, id)=>{

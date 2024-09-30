@@ -1,13 +1,30 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 
-const Home = () => {
-  return (
-    <div className = 'form'> Home 
-    <p> Hi My name is Dilasha</p>
+const Main = () => {
+  const [number, setNumber] = useState(1)
+  const handleIncrement=()=>{
+    if (number<10){
+      setNumber(number + 1)
+    }
+  }
+
+  const handleDecrement =()=>{
+    if (number > 0){
+      setNumber(number-1)
+    }
     
-    <li>1</li>
-    <li>2</li></div>
+  }
+  return (
+    
+    <div> 
+      <input placeholder='enter here'/>
+      {number}
+      <button onClick={handleIncrement}>Increment</button>
+      <br/>
+      <button onClick={handleDecrement}>Decrement</button>
+    </div>
   )
 }
 
-export default Home
+export default Main

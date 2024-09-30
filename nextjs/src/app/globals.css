@@ -7,7 +7,7 @@
   width : 120px;
 }
 
-.login{
+/* .login{
   background-image: url('/bg_img.jpg'); 
   background-size: cover;
   background-position: center;
@@ -38,23 +38,5 @@ input[type="text"] {
   border-radius: 8px;
   outline: none;
   background-color: #ffffff;
-}
+}  */
 
-.button {
-  background-color: #040404; 
-  color: white;
-  margin: 7px;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px; 
-  cursor: pointer;
-  transition: all 0.3s ease; 
-  text-transform: uppercase;
-
-}
-
-.button:hover {
-  background-color: #343637; 
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3), 0 6px 8px rgba(0, 0, 0, 0.1); 
-}

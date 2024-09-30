@@ -5,7 +5,11 @@ const AdminDashboardLayout = ({children}) => {
   return (
     <div className='flex gap-4'>
     <Sidebar/>
-    {children}
+    <div className='bg-[#fff8e6] w-[100vw]'>
+      
+      {children}
+      
+    </div>
     </div>
   )
 }
