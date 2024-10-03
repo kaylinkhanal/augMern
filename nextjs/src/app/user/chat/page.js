@@ -1,4 +1,5 @@
 'use client'
+import { ChatInput } from '@/components/chat-input'
 import ChatBox from '@/components/chatBox/page'
 import { ThinSidebarComponent } from '@/components/thin-sidebar'
 import UserListBox from '@/components/userList/page'
