@@ -150,3 +150,14 @@ const Main = () => {
 }
 
 export default Main
+
+
+
+
+
+
+// GET:
+// PUT:
+// Post:
+// DELETE:
+// PATCH:

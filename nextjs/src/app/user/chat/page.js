@@ -1,8 +1,20 @@
+// <<<<<<< HEAD
 "use client";
 import ChatBox from "@/components/chatBox/page";
 import { ThinSidebarComponent } from "@/components/thin-sidebar";
 import UserListBox from "@/components/userList/page";
 import React, { useState } from "react";
+
+
+// =======
+// 'use client'
+// import { ChatInput } from '@/components/chat-input'
+// import ChatBox from '@/components/chatBox/page'
+// import { ThinSidebarComponent } from '@/components/thin-sidebar'
+// import UserListBox from '@/components/userList/page'
+// import React, { useState } from 'react'
+// >>>>>>> 50bd3fa84316f0e85cd419c7d73f0cedfd6e129e
+
 const userData = [
 	{
 		id: 1,

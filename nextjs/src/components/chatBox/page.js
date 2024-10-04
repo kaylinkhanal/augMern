@@ -1,4 +1,5 @@
 import React from 'react'
+import { ChatInput } from '../chat-input'
 const messages = [
     {
         "id": 1,
@@ -64,6 +65,8 @@ const ChatBox = (props) => {
                 </div>
             )
         })}
+        <ChatInput/>
+
         </div>
   )
 }
