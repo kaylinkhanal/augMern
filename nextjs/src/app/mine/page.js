@@ -1,26 +1,22 @@
 'use client'
 import React, { useState } from 'react'
-
 const initialBox = [
-    ['1', '2' ,'3','4'],
-    ['', '5' ,'',''],
-    ['6', '7','',''],
-    ['', '8' ,'9','10']
+    ['snake mouth 0', '9' ,'','4'],
+    ['5', '' , '7','3'],
+    ['8', '0','','snake tail 0'],
+    ['', '' ,'5','6']
 ]
 
 const mineBox = initialBox.map((item)=>{
-    const randomNum = Math.floor(Math.random()*4)
-    const randomBomb = Math.floor(Math.random()*4)
-    item[randomNum] = 'bomb'
-    item[randomBomb] = randomNum > randomBomb ? 'bomb':''
-    
-    
-    return item
-  })
+        const randomBombOne = Math.floor( Math.random()*4) 
+        item[randomBombOne] = 'bomb'
+        return item
+})
 
 const Mine = () => {
     const [selections, setSelections] = useState([])
     const [isGameOver, setIsGameOver] = useState(false)
+ 
 
    const saveResults = (val)=> {
     if(val=='bomb'){

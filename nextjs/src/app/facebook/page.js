@@ -2,42 +2,39 @@
 import React, { useState } from 'react'
 
 const Facebook = () => {
-    const [color, setColor] = useState('bg-gray-300');  
+
+    const [reaction, setReaction] = useState('')
     const [reactionDivOpen, setReactionDivOpen] = useState(false)
 
-    const [reaction, setSelectedReaction] = useState('Like')
-    function changeReaction(selectedreaction){
-        if (reaction === selectedreaction){
-            setSelectedReaction('')
-        }
-        else{
-            setSelectedReaction(selectedreaction)
-        }
-        
-
-    }
-    function generateIcon(){
-        if (reaction === 'Haha'){
-            return <button onClick={()=>changeReaction('Haha')}>😆</button>
-        }
-        else if (reaction ==='Wow'){
-            return <button onClick={()=>changeReaction('Wow')}>👏</button>
-        }
-        else{
-            return <button onClick={ ()=>changeReaction('Like')}>{reaction == 'Like'? <span>👍🏼</span>:<span>👍</span> } </button>
+    function changeReaction(selectedReaction){
+        if(reaction == selectedReaction){
+            setReaction('')
+        }else{
+            setReaction(selectedReaction)
         }
     }
 
-    return (
-        <div className='text-4xl'>
-            {reactionDivOpen && <div onMouseLeave={()=> setReactionDivOpen(false)}>
-                <button onClick={ ()=>changeReaction('Like')}  >👍</button>
-                <button onClick={()=>changeReaction('Wow')}  >👏</button>
-                <button onClick={()=>changeReaction('Haha')}  >😆</button>
+    function generateIcons(){
+        if(reaction === 'Haha'){
+            return <button  onClick={()=> changeReaction('Haha')} >😆</button>
+        }else if(reaction  === 'Wow'){
+            return <button  onClick={()=> changeReaction('Wow')}>😲</button>
+        }else{
+            return <button onClick={()=> changeReaction('Like')} className='text'>{reaction == 'Like' ? <span>👍🏼</span>: <span><img src='/greylike.jpg' width={40} height={40}/></span>}</button>
+        }
+    }
+  return (
+    <div className='text-4xl'>
+           {reactionDivOpen && <div onMouseLeave={()=> setReactionDivOpen(false)}>
+                <button  onClick={()=> changeReaction('Like')}>👍🏼</button>
+                <button onClick={()=> changeReaction('Haha')}>😆</button>
+                <button onClick={()=>changeReaction('Wow')}>😲</button>
             </div>}
-            <div onMouseEnter={()=> setReactionDivOpen(true)}>{generateIcon()}</div>
-        </div>
-    );
+                
+            <div onMouseEnter={()=>setReactionDivOpen(true)}>{generateIcons()}</div>
+    
+    </div>
+  )
 }
 
-export default Facebook;
+export default Facebook
