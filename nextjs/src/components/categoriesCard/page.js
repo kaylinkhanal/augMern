@@ -9,8 +9,10 @@ const CategoriesCard = (props) => {
   return (
     <div >
         <Trash2 onClick={handleDelete}/>
-        {props.item.name}
-        <img src={props.item.image} width={100} height={100}/>
+        {props.item.title}
+        {props.item.price}
+
+        <img src={props.item?.images[0]?.replace('["','')?.replace('"]','')} width={100} height={100}/>
     </div>
   )
 }
