@@ -73,7 +73,7 @@
 
 // export default HangMan;
 
-//Solution 2
+//Solution 2------------------------------------------------
 
 "use client";
 import React, { useEffect, useState } from "react";

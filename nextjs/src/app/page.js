@@ -85,74 +85,81 @@
 
 // export default Home;
 
-
-
-
-'use client'
-import React, { useState } from 'react'
+"use client";
+import React, { useState } from "react";
 
 const Main = () => {
-	const [increment, setIncrement] = useState(1)
-	const [decrement, setDecrement] = useState(10)
-	const [number, setNumber] = useState(5)
+	const [increment, setIncrement] = useState(1);
+	const [decrement, setDecrement] = useState(10);
+	const [number, setNumber] = useState(5);
 	function handleIncrement() {
-		if (increment < 10)
-			setIncrement(increment + 1)
+		if (increment < 10) setIncrement(increment + 1);
 	}
 	function handleDecrement() {
-		if (decrement > 0)
-			setDecrement(decrement - 1)
+		if (decrement > 0) setDecrement(decrement - 1);
 	}
 
 	function handleIncrementNumber() {
-		if (number < 10)
-			setNumber(number + 1)
+		if (number < 10) setNumber(number + 1);
 	}
 
 	function handleDecrementNumber() {
-		if (number > 0)
-			setNumber(number - 1)
-
+		if (number > 0) setNumber(number - 1);
 	}
-
 
 	return (
 		<div className="flex flex-col">
-			<div>Increase decrease two different numbers with two different increment /decrement butttons</div>
+			<div>
+				Increase decrease two different numbers with two different increment
+				/decrement butttons
+			</div>
 			<div className="flex gap-2">
 				<span>{increment}</span>
-				<button className="w-20 h-4 bg-green-100" onClick={handleIncrement}>	+		</button>
+				<button
+					className="w-20 h-4 bg-green-100"
+					onClick={handleIncrement}>
+					{" "}
+					+{" "}
+				</button>
 			</div>
 			<br />
 			<div className="flex gap-2">
 				<span className="w-20 h-4">{decrement}</span>
-				< button className="w-20 h-4 bg-red-100" onClick={handleDecrement}>		-		</button>
+				<button
+					className="w-20 h-4 bg-red-100"
+					onClick={handleDecrement}>
+					{" "}
+					-{" "}
+				</button>
 			</div>
 			<br />
 			<br />
-			<div>Increase same  number or decrease same number with two different increment /decrement butttons</div>
+			<div>
+				Increase same number or decrease same number with two different
+				increment /decrement butttons
+			</div>
 			<div className="flex flex-col gap-2">
-
-
-				<span className="w-20 h-4">
-					{number}
-				</span>
+				<span className="w-20 h-4">{number}</span>
 				<div className="flex gap-4">
-					< button className="w-20 h-4 bg-green-100" onClick={handleIncrementNumber}>		+		</button>
-					< button className="w-20 h-4 bg-red-100" onClick={handleDecrementNumber}>		-		</button>
+					<button
+						className="w-20 h-4 bg-green-100"
+						onClick={handleIncrementNumber}>
+						{" "}
+						+{" "}
+					</button>
+					<button
+						className="w-20 h-4 bg-red-100"
+						onClick={handleDecrementNumber}>
+						{" "}
+						-{" "}
+					</button>
 				</div>
-
 			</div>
+		</div>
+	);
+};
 
-		</div >
-
-	)
-}
-
-export default Main
-
-
-
+export default Main;
 
 
 
