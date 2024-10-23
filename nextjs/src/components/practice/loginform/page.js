@@ -33,13 +33,13 @@ export const ValidationSchemaExample = () => (
 
 				<Form className="flex flex-col gap-2 bg-blue-100 m-auto w-[100%] p-4 rounded-2xl">
 					
-					<label for=" text-left">FirstName</label>
+					<label htmlFor=" text-left">FirstName</label>
 					<Field name="firstName" />
 					{errors.firstName && touched.firstName ? (
 						<div>{errors.firstName}</div>
 					) : null}
 
-					<label for="">LastName</label>
+					<label htmlFor="">LastName</label>
 					<Field name="lastName w-[100%] text-left" />
 					{errors.lastName && touched.lastName ? (
 						<div>{errors.lastName}</div>

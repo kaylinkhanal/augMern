@@ -148,12 +148,15 @@ const HangMan = () => {
 			{question} <br />
 			{hangCount !== 3 &&
 				question.join() !== answer.join() &&
-				keyboard.map((item) => {
+				keyboard.map((item, key1) => {
 					return (
-						<div className="flex gap-4 p-2 m-2">
-							{item.map((item) => {
+						<div
+							key={key1}
+							className="flex gap-4 p-2 m-2">
+							{item.map((item, key2) => {
 								return (
 									<div
+										key={key2}
 										onClick={() => addSelection(item)}
 										className="bg-black p-4 text-white">
 										{item}
@@ -166,7 +169,7 @@ const HangMan = () => {
 			<div className="flex flex-col justify-center items-center w-[300px] text-4xl">
 				{hangmanArr.map((item, id) => {
 					if (id > hangCount) return null;
-					return <div>{item}</div>;
+					return <div key={id}>{item}</div>;
 				})}
 			</div>
 			<button onClick={() => setPage(page + 1)}>Next</button>

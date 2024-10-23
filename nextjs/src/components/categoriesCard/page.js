@@ -20,6 +20,19 @@ const CategoriesCard = (props) => {
 		</div>
 	);
 };
+    const handleDelete = ()=>{
+        fetch('https://api.escuelajs.co/api/v1/categories/'+props.item.id,{method:'DELETE'})
+    }
+  return (
+    <div >
+        <Trash2 onClick={handleDelete}/>
+        {props.item.title}
+        {props.item.price}
+
+        <img src={props.item?.images[0]?.replace('["','')?.replace('"]','')} width={100} height={100}/>
+    </div>
+  )
+
 
 export default CategoriesCard;
 
