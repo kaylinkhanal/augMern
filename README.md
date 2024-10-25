@@ -6,7 +6,7 @@
 2. [nextjs](https://nextjs.org/)
 3. [shadcnUI](https://ui.shadcn.com/)
 4. [chartjs](https://www.chartjs.org/)
-5. formik & yup validation
+5. [formik & yup validation](https://formik.org/docs/guides/validation)
 6. [tailwind css](https://tailwindcss.com/)
 7. [fakeapi](https://fakeapi.platzi.com/)
 8. [nextUI](https://nextui.org/)

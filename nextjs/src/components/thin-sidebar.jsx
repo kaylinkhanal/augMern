@@ -13,30 +13,30 @@ const menuItems = [
 
 export function ThinSidebarComponent() {
   return (
-    (<div
-      className="flex flex-col w-[5%] h-screen bg-black border-r border-gray-200 rounded-2xl p-3">
-      <div className="flex flex-col items-center py-4">
-        <Link href="/" className="mb-8">
-          <Sparkle className="h-8 w-8 text-orange-500" />
-        </Link>
-        <TooltipProvider>
-          {menuItems.map((item) => (
-            <Tooltip key={item.name}>
-              <TooltipTrigger asChild>
-                <Button size="icon" className="mb-4" asChild>
-                  <Link href={item.href}>
-                    <item.icon className="h-5 w-5" />
-                    <span className="sr-only">{item.name}</span>
-                  </Link>
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent side="right">
-                <p>{item.name}</p>
-              </TooltipContent>
-            </Tooltip>
-          ))}
-        </TooltipProvider>
-      </div>
-    </div>)
+    <div
+          className="flex flex-col w-[5%] h-screen bg-black border-r border-gray-200 rounded-2xl p-3">
+          <div className="flex flex-col items-center py-4">
+            <Link href="/" className="mb-8">
+              <Sparkle className="h-8 w-8 text-orange-500" />
+            </Link>
+            <TooltipProvider>
+              {menuItems.map((item) => (
+                <Tooltip key={item.name}>
+                  <TooltipTrigger asChild>
+                    <Button size="icon" className="mb-4" asChild>
+                      <Link href={item.href}>
+                        <item.icon className="h-5 w-5" />
+                        <span className="sr-only">{item.name}</span>
+                      </Link>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent side="right">
+                    <p>{item.name}</p>
+                  </TooltipContent>
+                </Tooltip>
+              ))}
+            </TooltipProvider>
+          </div>
+        </div>
   );
 }
